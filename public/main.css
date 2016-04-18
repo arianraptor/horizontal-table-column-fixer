@@ -1,0 +1,70 @@
+.border {
+    border-color: #efefef;
+}
+
+.container {
+    width: 1225px;
+}
+
+table {
+   border-collapse: separate;
+   border-spacing: 0;
+}
+
+table th, table td {
+    line-height: 30px;
+}
+
+table th {
+    border-top: 1px solid transparent;
+    border-left: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid transparent;
+    background: #fff;
+}
+
+table td {
+    background: #fff;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid transparent;
+}
+
+table tr:first-child th {
+    border-top: 1px solid transparent;
+    z-index: 2;
+}
+
+table tr:last-child td {
+    border-bottom: 1px solid transparent;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+    border-left: 1px solid transparent;
+}
+
+table tr td:last-child,
+table tr th:last-child {
+    border-right: 1px solid transparent;
+}
+
+.table-fix-column-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+table tr:hover td {
+    background: #d8dfea;
+}
+
+.mw1 {
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.fixed-column {
+    /*border-left: 1px solid transparent;*/
+}
