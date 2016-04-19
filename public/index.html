@@ -9,19 +9,22 @@
             <link href="basscss.min.css" rel="stylesheet">
             <link href="main.css" rel="stylesheet">
             <script src="jquery.min.js"></script>
+            <script src="HorizontalTableColumnFixer.js"></script>
+            <script src="jquery.mousewheel.min.js"></script>
+            <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
             <script src="main.js"></script>
         </meta>
     </head>
     <body class="px4">
         <div class="container border mt4 right relative">
             <div class="table-fix-column-wrapper">
-                <table>
+                <table class="table-fix-column sortable">
                     <thead>
                         <tr>
-                            <th class="px2 py1 left-align absolute fixed-column">&nbsp;</th>
-                            <th class="px2 py1 left-align mw1 absolute fixed-column">-</th>
-                            <th class="px2 py1 left-align mw1 absolute fixed-column">Group</th>
-                            <th class="px2 py1 left-align mw1 absolute fixed-column">Status</th>
+                            <th class="px2 py1 left-align absolute fixed-column"><span class="inline-block">&nbsp;</span></th>
+                            <th class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">-</span></th>
+                            <th class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">Group</span></th>
+                            <th class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">Status</span></th>
                             <th class="px2 py1 left-align mw1">Max Bid</th>
                             <th class="px2 py1 left-align mw1">Avg Cost</th>
                             <th class="px2 py1 left-align mw1">Start</th>
@@ -36,10 +39,10 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="px2 py1 left-align absolute fixed-column">&nbsp;</td>
-                            <td class="px2 py1 left-align mw1 absolute fixed-column">-</td>
-                            <td class="px2 py1 left-align mw1 absolute fixed-column">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                            <td class="px2 py1 left-align mw1 absolute fixed-column">Status</td>
+                            <td class="px2 py1 left-align absolute fixed-column"><span class="inline-block">&nbsp;</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">-</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">Status</span></td>
                             <td class="px2 py1 left-align mw1">Max Bid</td>
                             <td class="px2 py1 left-align mw1">Avg Cost</td>
                             <td class="px2 py1 left-align mw1">Start</td>
@@ -52,10 +55,42 @@
                             <td class="px2 py1 left-align mw1">Sold</td>
                         </tr>
                         <tr>
-                            <td class="px2 py1 left-align absolute fixed-column">&nbsp;</td>
-                            <td class="px2 py1 left-align mw1 absolute fixed-column">-</td>
-                            <td class="px2 py1 left-align mw1 absolute fixed-column">Group</td>
-                            <td class="px2 py1 left-align mw1 absolute fixed-column">Status</td>
+                            <td class="px2 py1 left-align absolute fixed-column"><span class="inline-block">&nbsp;</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">-</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">Group</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">Status</span></td>
+                            <td class="px2 py1 left-align mw1">Max Bid</td>
+                            <td class="px2 py1 left-align mw1">Avg Cost</td>
+                            <td class="px2 py1 left-align mw1">Start</td>
+                            <td class="px2 py1 left-align mw1">End</td>
+                            <td class="px2 py1 left-align mw1">Daily Budget</td>
+                            <td class="px2 py1 left-align mw1">Spend</td>
+                            <td class="px2 py1 left-align mw1">Impr</td>
+                            <td class="px2 py1 left-align mw1">Click</td>
+                            <td class="px2 py1 left-align mw1">CTR</td>
+                            <td class="px2 py1 left-align mw1">Sold</td>
+                        </tr>
+                        <tr>
+                            <td class="px2 py1 left-align absolute fixed-column"><span class="inline-block">&nbsp;</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">-</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">Group</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">Status</span></td>
+                            <td class="px2 py1 left-align mw1">Max Bid</td>
+                            <td class="px2 py1 left-align mw1">Avg Cost</td>
+                            <td class="px2 py1 left-align mw1">Start</td>
+                            <td class="px2 py1 left-align mw1">End</td>
+                            <td class="px2 py1 left-align mw1">Daily Budget</td>
+                            <td class="px2 py1 left-align mw1">Spend</td>
+                            <td class="px2 py1 left-align mw1">Impr</td>
+                            <td class="px2 py1 left-align mw1">Click</td>
+                            <td class="px2 py1 left-align mw1">CTR</td>
+                            <td class="px2 py1 left-align mw1">Sold</td>
+                        </tr>
+                        <tr>
+                            <td class="px2 py1 left-align absolute fixed-column"><span class="inline-block">&nbsp;</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">-</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></td>
+                            <td class="px2 py1 left-align mw1 absolute fixed-column"><span class="inline-block">Status</span></td>
                             <td class="px2 py1 left-align mw1">Max Bid</td>
                             <td class="px2 py1 left-align mw1">Avg Cost</td>
                             <td class="px2 py1 left-align mw1">Start</td>

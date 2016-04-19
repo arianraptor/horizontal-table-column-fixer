@@ -1,3 +1,17 @@
+body {
+    height: 2000px;
+}
+
+.border-last:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: 3px solid #efefef;
+    height: auto;
+    min-height: 100% !important;
+}
+
 .border {
     border-color: #efefef;
 }
@@ -54,6 +68,7 @@ table tr th:last-child {
     width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
+    height: 500px;
 }
 
 table tr:hover td {
@@ -62,9 +77,9 @@ table tr:hover td {
 
 .mw1 {
     min-width: 100px;
-    max-width: 200px;
+    max-width: 300px;
 }
 
-.fixed-column {
-    /*border-left: 1px solid transparent;*/
+th {
+    white-space: nowrap;
 }
